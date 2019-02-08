@@ -2,16 +2,32 @@
 
 require_once("config.php");
 
-/*
-$sql = new Sql();
-$usuario = $sql->select("SELECT * FROM tb_usuario");
-echo json_encode($usuario);
-*/
 
-$user = new Usuario();
-$user->loadById(3);
+//$sql = new Sql();
+//$usuario = $sql->select("SELECT * FROM tb_usuario");
+//echo json_encode($usuario);
 
-echo $user;
+
+//Carrega um usuario
+//$user = new Usuario();
+//$user->loadById(3);
+//echo $user;
+
+
+//Carrega uma lista de usuarios
+//$lista  = Usuario::getList();	
+//echo json_encode($lista);
+
+
+//Pesquisa usuarios pelo login
+//$search = Usuario::search("Te");
+//echo json_encode($search);
+
+
+//Login do usuario (login e senha)
+$usuario = new Usuario();
+$usuario->login("Leno","#@%%12456");
+echo $usuario;
 
 
 ?>
