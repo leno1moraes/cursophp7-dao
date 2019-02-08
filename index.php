@@ -36,9 +36,16 @@ require_once("config.php");
 //$user->insert();
 //echo $user;
 
+//DEletar regstros
+//$user = new Usuario();
+//$user->loadById(5);
+//$user->update("professor", "!Q@W¨Y&U8");
+//echo $user;
+
 $user = new Usuario();
-$user->loadById(5);
-$user->update("professor", "!Q@W¨Y&U8");
+$user->loadById(24);
+$user->delete();
 echo $user;
+
 
 ?>
